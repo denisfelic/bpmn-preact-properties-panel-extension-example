@@ -1,0 +1,21 @@
+{
+  "name": "bpmn-preact-vite-test",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@bpmn-io/properties-panel": "^2.2.0",
+    "bpmn-js": "^13.1.0",
+    "bpmn-js-properties-panel": "^1.26.0",
+    "react-bpmn": "^0.2.0"
+  },
+  "devDependencies": {
+    "@preact/preset-vite": "^2.5.0",
+    "vite": "^4.3.9"
+  }
+}
