@@ -24,7 +24,7 @@ export function App() {
   useEffect(() => {
     (async () => {
       const $modelerContainer = document.querySelector('#modeler-container');
-      const diagramXML = await fetchDiagram("diagram (5).bpmn")
+      const diagramXML = await fetchDiagram("diagram.bpmn")
 
       modeler = new Modeler({
         container: $modelerContainer,
