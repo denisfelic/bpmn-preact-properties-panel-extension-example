@@ -958,6 +958,11 @@ domify@^1.4.1:
   resolved "https://registry.npmjs.org/domify/-/domify-1.4.1.tgz"
   integrity sha512-x18nuiDHMCZGXr4KJSRMf/TWYtiaRo6RX8KN9fEbW54mvbQ6pieUuerC2ahBg+kEp1wycFj8MPUI0WkIOw5E9w==
 
+downloadjs@^1.4.7:
+  version "1.4.7"
+  resolved "https://registry.npmjs.org/downloadjs/-/downloadjs-1.4.7.tgz"
+  integrity sha512-LN1gO7+u9xjU5oEScGFKvXhYf7Y/empUIIEAGBs1LzUq/rg5duiDrkuH5A2lQGd5jfMOb9X9usDa2oVXwJ0U/Q==
+
 electron-to-chromium@^1.4.411:
   version "1.4.417"
   resolved "https://registry.npmjs.org/electron-to-chromium/-/electron-to-chromium-1.4.417.tgz"
