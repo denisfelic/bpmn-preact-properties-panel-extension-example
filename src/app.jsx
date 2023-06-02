@@ -1,7 +1,11 @@
 import { useState, useEffect, useRef } from 'preact/hooks'
 import Modeler from 'bpmn-js/lib/Modeler';
+import { 
+  BpmnPropertiesPanelModule, 
+  BpmnPropertiesProviderModule
+} from 'bpmn-js-properties-panel';
 
-import customModdleExtension from './moddle/custom.json';
+// import customModdleExtension from './moddle/custom.json';
 // import PropertiesPanel from './properties-panel';
 
 export function App() {
@@ -19,9 +23,17 @@ export function App() {
 
       const modeler = new Modeler({
         container: $modelerContainer,
-        moddleExtensions: {
-          custom: customModdleExtension
+        propertiesPanel: {
+          parent: '#js-properties-panel'
         },
+        additionalModules: [
+          BpmnPropertiesPanelModule,
+          BpmnPropertiesProviderModule
+        ],
+
+        // moddleExtensions: {
+        //   custom: customModdleExtension
+        // },
         keyboard: {
           bindTo: document.body
         }
@@ -36,7 +48,9 @@ export function App() {
     <>
       <div style={{height: '100%'}}>
         <h1>Preact</h1>
-        <div id='modeler-container'></div>
+        <div id='modeler-container'>
+        </div>
+          <div id="js-properties-panel"></div>
       </div>
     </>
   )
